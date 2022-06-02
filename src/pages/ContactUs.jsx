@@ -115,12 +115,12 @@ function ContactUs() {
                                   rows={4}
                                 ></textarea>
 
-                                <a
-                                  href="#"
-                                  className=" flex items-center justify-center px-2 py-1 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                                <button
+                                  type="button"
+                                  class="bg-indigo-600 text-white text-sm  leading-6 font-medium py-2 px-3 rounded-full"
                                 >
-                                  Get started
-                                </a>
+                                  Get Started
+                                </button>
                               </div>
                             </form>
                           </div>

@@ -63,7 +63,10 @@ function Header() {
                         </a>
                       ))}
                       <Link to="/contact">
-                        <button class="rounded-full px-2 btn-blue">
+                        <button
+                          type="button"
+                          class="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
+                        >
                           CONTACT US
                         </button>
                       </Link>
