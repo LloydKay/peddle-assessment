@@ -16,10 +16,8 @@ function App() {
         <Route path="/comingsoon" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/github" element={<User />} />
+        <Route path="/github" element={<Fetch />} />
         <Route path="/contact" element={<ContactUs />} />
-
-        <Route path="/fetch" element={<Fetch />} />
       </Routes>
       <Footer />
     </Router>
