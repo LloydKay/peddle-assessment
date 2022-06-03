@@ -6,6 +6,7 @@ module.exports = {
         twitter: "#180434",
         fiy: "#483c5c",
         oil: "#200444",
+        pou: "#30144c",
       },
     },
   },

@@ -54,16 +54,16 @@ function Home() {
       </div>
 
       <div className="flex justify-center pt-5 pb-10">
-        <div class="  px-2">
-          <div class="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
-            <form class="flex flex-row">
+        <div className="  px-2">
+          <div className="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
+            <form className="flex flex-row">
               <input
-                class="h-16 bg-gray-100 text-grey-darker py-2 text-xs text-grey-darkest border border-gray-100 font-bold w-72   outline-none rounded-full text-gray-600"
+                className="h-16 bg-gray-100 text-grey-darker py-2 text-xs text-grey-darkest border border-gray-100 font-bold w-72   outline-none rounded-full text-gray-600"
                 type="text"
                 placeholder="Enter your email address..."
               />
-              <span class="flex items-center bg-blue-500 rounded-full  border-0 px-3 font-bold text-grey-100">
-                <button class="bg-gredient-dark hover:bg-gredient-light text-xs text-white py-3 px-6 rounded-full">
+              <span className="flex items-center bg-blue-500 rounded-full  border-0 px-3 font-bold text-grey-100">
+                <button className="bg-gredient-dark hover:bg-gredient-light text-xs text-white py-3 px-6 rounded-full">
                   JOIN OUR WAITING LIST
                 </button>
               </span>

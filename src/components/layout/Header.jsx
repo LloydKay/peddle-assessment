@@ -1,5 +1,5 @@
-import React from "react";
-import { Fragment } from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import metricks from "../assets/metric.png";
@@ -15,6 +15,14 @@ function classNames(...classes) {
 }
 
 function Header() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/blog") {
+      // Change background color
+    }
+  }, [location]);
+
   return (
     <div className="container mx-auto mt-3">
       <Disclosure as="nav" className="bg-oil">
@@ -65,7 +73,7 @@ function Header() {
                       <Link to="/contact">
                         <button
                           type="button"
-                          class="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
+                          className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
                         >
                           CONTACT US
                         </button>
