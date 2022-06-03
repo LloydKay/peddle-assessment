@@ -12,241 +12,203 @@ function About() {
 
   return (
     <>
-      <Transition.Root show={open} as={Fragment}>
-        <Dialog
-          as="div"
-          className="relative z-10"
-          initialFocus={cancelButtonRef}
-          onClose={setOpen}
-        >
-          <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="ease-in duration-200"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-          </Transition.Child>
+      <div className=" fixed z-10 inset-0 overflow-y-auto container mx-auto ">
+        <div className=" flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+          <div>
+            <Header />
+            <div className="bg-oil text-white">
+              <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center ">
+                <h2 className="t font-extrabold tracking-tight text-white">
+                  <p className=" px-52 text-sm">
+                    {" "}
+                    <hr className="w-10 inline-block m-1" />
+                    ABOUT US
+                  </p>
+                  <p className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mt-">
+                    <p className="block m-12 px-64 text-7xl">
+                      Built For Saas and E-commerce
+                    </p>
+                  </p>
+                </h2>
+              </div>
 
-          <div className=" fixed z-10 inset-0 overflow-y-auto ">
-            <div className=" flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
-              <Transition.Child
-                as={Fragment}
-                enter="ease-out duration-300"
-                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                enterTo="opacity-100 translate-y-0 sm:scale-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-              >
-                <Dialog.Panel className="container mx-auto relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:w-full">
-                  <div>
-                    <Header />
-                    <div className="bg-oil text-white">
-                      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center ">
-                        <h2 className="t font-extrabold tracking-tight text-white">
-                          <p className=" px-52 text-sm">
-                            {" "}
-                            <hr className="w-10 inline-block m-1" />
-                            ABOUT US
-                          </p>
-                          <p className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mt-">
-                            <p className="block m-12 px-64 text-7xl">
-                              Built For Saas and E-commerce
-                            </p>
-                          </p>
-                        </h2>
-                      </div>
-
-                      <div className="bg-oil px-4 sm:px-6 sm:flex sm:flex-row-reverse  w-1/4 flex justify-end py-7">
-                        <p className="flex justify-end">
-                          Our tools are easy to set up and use with a user
-                          friendly dashboard that enables you to set up, launch,
-                          automate and manage multi-affiliate campaigns in 5
-                          minutes,
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className=" bg-oil text-white">
-                      <div className="flex justify-center px-9 py-5 mx-44  ">
-                        <p className="text-5xl m-7">
-                          Metricks was developed because just like you, we
-                          needed a product that could give us good value.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className=" flex justify-evenly  py-24 bg-oil text-white">
-                      <div className=" m-9 p-8">
-                        <p>01</p>
-                        <p className="mb-5">
-                          {" "}
-                          <hr className="w-10 inline-block m-1" />
-                          WHY US?
-                        </p>
-                        <p className="text-justify">
-                          We pride ourselves in eur ability to innevate and
-                          create world-class tools that provide reliable and
-                          effielent touchpoints between advertisers and
-                          affiliates,
-                        </p>
-
-                        <p className="mt-5 pr-10 text-justify">
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          <br />
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          <br />
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          <br />
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          <br />
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          {"\u2022"}
-                          <br />
-                        </p>
-                      </div>
-                      <div className="shadow m-9 ml-4 p-8 bg-pou ">
-                        <p>02</p>
-                        <p className="mb-5">
-                          {" "}
-                          <hr className="w-10 inline-block m-1" />
-                          GROWING WITH YOU
-                        </p>
-                        <p className="mb-5 text-justify">
-                          Leveraging the best technology, we have developed an
-                          all-in- one affillate marketing tracking software, a
-                          genius tool to help you track, automate and optimize
-                          your influencer campaigns, all from one dashboard
-                        </p>
-                        <p className="mt-5 text-justify">
-                          Our team of experts are constantly brainstorming,
-                          testing and developing new solutions with only one
-                          thing in mind - your business growth. Your success is
-                          our success and by giving you the tools you need to
-                          scale, we grow as well.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="bg-oil">
-                      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-                        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                          <span className="block text-white">
-                            Got a Questions ?
-                          </span>
-                          <p className="text-sm mt-5 text-gray-300">
-                            Show how Metrics can help your business grow with
-                            best affiliate marketing tracking software
-                          </p>
-                          <p className="text-sm mt-5 text-pink-300">
-                            Contact Us <FaArrowRight />{" "}
-                          </p>
-                        </h2>
-                        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0"></div>
-                      </div>
-                    </div>
-
-                    <Footer />
-                  </div>
-                </Dialog.Panel>
-              </Transition.Child>
+              <div className="bg-oil px-4   w-1/4 flex justify-end py-7">
+                <p className="flex justify-end text-right">
+                  Our tools are easy to set up and use with a user friendly
+                  dashboard that enables you to set up, launch, automate and
+                  manage multi-affiliate campaigns in 5 minutes,
+                </p>
+              </div>
             </div>
+
+            <div className=" bg-oil text-white">
+              <div className="flex justify-center px-9 py-5 mx-44  ">
+                <p className="text-5xl m-7">
+                  Metricks was developed because just like you, we needed a
+                  product that could give us good value.
+                </p>
+              </div>
+            </div>
+
+            <div className=" flex justify-evenly  py-24 bg-oil text-white">
+              <div className=" m-9 p-8">
+                <p>01</p>
+                <p className="mb-5">
+                  {" "}
+                  <hr className="w-10 inline-block m-1" />
+                  WHY US?
+                </p>
+                <p className="text-justify">
+                  We pride ourselves in eur ability to innevate and create
+                  world-class tools that provide reliable and effielent
+                  touchpoints between advertisers and affiliates,
+                </p>
+
+                <p className="mt-5 pr-10 text-justify">
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  <br />
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  <br />
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  <br />
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  <br />
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  {"\u2022"}
+                  <br />
+                </p>
+              </div>
+              <div className="shadow m-9 ml-4 p-8 bg-pou ">
+                <p>02</p>
+                <p className="mb-5">
+                  {" "}
+                  <hr className="w-10 inline-block m-1" />
+                  GROWING WITH YOU
+                </p>
+                <p className="mb-5 text-justify">
+                  Leveraging the best technology, we have developed an all-in-
+                  one affillate marketing tracking software, a genius tool to
+                  help you track, automate and optimize your influencer
+                  campaigns, all from one dashboard
+                </p>
+                <p className="mt-5 text-justify">
+                  Our team of experts are constantly brainstorming, testing and
+                  developing new solutions with only one thing in mind - your
+                  business growth. Your success is our success and by giving you
+                  the tools you need to scale, we grow as well.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-oil">
+              <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                  <span className="block text-white">Got a Questions ?</span>
+                  <p className="text-sm mt-5 text-gray-300">
+                    Show how Metrics can help your business grow with best
+                    affiliate marketing tracking software
+                  </p>
+                  <p className="text-sm mt-5 text-pink-300">
+                    Contact Us <FaArrowRight />{" "}
+                  </p>
+                </h2>
+                <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0"></div>
+              </div>
+            </div>
+
+            <Footer />
           </div>
-        </Dialog>
-      </Transition.Root>
+        </div>
+      </div>
     </>
   );
 }
