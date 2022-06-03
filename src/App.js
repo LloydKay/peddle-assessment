@@ -6,7 +6,6 @@ import Blog from "./pages/Blog";
 import ContactUs from "./pages/ContactUs";
 import Fetch from "./pages/Fetch";
 import Home from "./pages/Home";
-import User from "./pages/User";
 
 function App() {
   return (
