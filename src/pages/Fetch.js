@@ -1,9 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import mrt from "../components/assets/mrt.png";
-
-const GITHUB_URL = process.env.REACT_APP_GITHUB_URL;
-const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 
 function Fetch() {
   const [repos, setRepos] = useState([]);
@@ -14,12 +10,7 @@ function Fetch() {
 
   const fetchData = async () => {
     const res = await fetch(
-      `${GITHUB_URL}/search/repositories?q=created:>2021-08-13&sort=stars&order=desc&limit=30`,
-      {
-        headers: {
-          Authorization: `token ${GITHUB_TOKEN}`,
-        },
-      }
+      `https://api.github.com/search/repositories?q=created:%3E2021-08-13&sort=stars&order=desc`
     );
     const data = await res.json();
     console.log(data);
